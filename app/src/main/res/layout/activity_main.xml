@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ntakomisiyo_dark"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/idIVLogo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/mudasobwanobg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idTVAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idIVLogo"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Mudasobwa Tv"
+        android:textAlignment="center"
+        android:textColor="@color/ntakomisiyo_color"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idIVLogo" />
+
+
+    <ImageView
+        android:id="@+id/buyImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/idTVAppName"
+        android:src="@drawable/mudasobwanobg"
+        app:layout_constraintBottom_toTopOf="@+id/idTVPro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTVAppName"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <TextView
+        android:id="@+id/idTVPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text=" Programmer DATCH "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toEndOf="@+id/proImg" />
+
+    <ImageView
+        android:id="@+id/proImg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/idTVAppName"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/pro_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
